@@ -177,28 +177,55 @@
 
 // --------- es. 9 --------- //
 
-  var numeriArr = Array.Empty<int>();
-    int numero;
-    int somma = 0;
+//  var numeriArr = Array.Empty<int>();
+//  int numero;
+//  int somma = 0;
 
-    while (somma < 50)
-    {
-        
-        Console.Write("Inserisci un numero: ");
-        while (!int.TryParse(Console.ReadLine(), out numero))
-        {
-            Console.WriteLine("ci hai provato! Inserisci un numero >:(");
-        }
-        somma += numero;
-        Console.WriteLine("somma: " + somma);
-        Array.Resize(ref numeriArr, numeriArr.Length + 1);
-        numeriArr[numeriArr.Length - 1] = numero;
+//  while (somma < 50)
+//  {
 
-        foreach (int x in numeriArr)
-        {
-            Console.WriteLine("numero dell'Array: " + x);
-        }
-    }
+//      Console.Write("Inserisci un numero: ");
+//      while (!int.TryParse(Console.ReadLine(), out numero))
+//      {
+//          Console.WriteLine("ci hai provato! Inserisci un numero >:(");
+//      }
+//      somma += numero;
+//      Console.WriteLine("somma: " + somma);
+//      Array.Resize(ref numeriArr, numeriArr.Length + 1);
+//      numeriArr[numeriArr.Length - 1] = numero;
+
+//      foreach (int x in numeriArr)
+//      {
+//          Console.WriteLine("numero dell'Array: " + x);
+//      }
+//  }
+
+
+// --------- es. 10 --------- //
+
+//int N;
+//int[] numeri;
+
+//Console.Write("Inserisci il numero di array che vuoi creare: ");
+//    while (!int.TryParse(Console.ReadLine(), out N))
+//          {
+//              Console.WriteLine("ci hai provato! Inserisci un numero >:(");
+//          }
+
+//    Random rnd = new Random();
+
+//    for (int i = 0; i < N; i++)
+//    {
+//        numeri = new int[10]; // Crea un nuovo array contenente 10 elementi
+
+//        for (int x = 0; x < 10; x++)
+//        {
+//            numeri[x] = rnd.Next(1, 101); // 10 Numeri random da 1 a 10 da inserire nell'array appena creato
+//        }
+
+//        Console.WriteLine("Array {0}: {1}", i + 1, string.Join(", ", numeri)); // Stampa dell'array appena creato
+//    }
+
 
 
 
