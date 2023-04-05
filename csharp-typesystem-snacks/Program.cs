@@ -227,5 +227,24 @@
 //    }
 
 
+// --------- es. 11 --------- //
+
+//Chiedo la prima parola
+Console.Write("Inserisci la prima parola: ");
+string parola1 = Console.ReadLine();
+
+//Chiedo la seconda parola
+Console.Write("Inserisci la seconda parola: ");
+string parola2 = Console.ReadLine();
+
+parole(parola1, parola2);
+
+static void parole(string a, string b)
+{
+    string parolaLunga = (a.Length > b.Length) ? a : b;
+            Console.WriteLine("la parola più lunga fra le due è: " + parolaLunga);
+}
+
+
 
 
