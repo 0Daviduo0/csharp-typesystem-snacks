@@ -229,21 +229,50 @@
 
 // --------- es. 11 --------- //
 
-//Chiedo la prima parola
-Console.Write("Inserisci la prima parola: ");
-string parola1 = Console.ReadLine();
+////Chiedo la prima parola
+//  Console.Write("Inserisci la prima parola: ");
+//  string parola1 = Console.ReadLine();
 
-//Chiedo la seconda parola
-Console.Write("Inserisci la seconda parola: ");
-string parola2 = Console.ReadLine();
+////Chiedo la seconda parola
+//  Console.Write("Inserisci la seconda parola: ");
+//  string parola2 = Console.ReadLine();
 
-parole(parola1, parola2);
+////richiamo la funzione per valutare la lungezza delle parole
+//  contatoreParole(parola1, parola2);
 
-static void parole(string a, string b)
+//  static void contatoreParole(string a, string b)
+//  {
+//      string parolaLunga = (a.Length > b.Length) ? a : b;
+//              Console.WriteLine("la parola più lunga fra le due è: " + parolaLunga);
+//  }
+
+
+// --------- es. 12 --------- //
+
+    // chiedo il primo numero
+    Console.Write("Inserisci un numero:");
+    // controllo che sia un numero e poi lo salvo 
+    int numero1;
+        while (!int.TryParse(Console.ReadLine(), out numero1))
+        {
+            Console.WriteLine("ci hai provato! Inserisci un numero >:(");
+        }
+
+controlloPariDispari(numero1);
+
+static void controlloPariDispari(int a)
 {
-    string parolaLunga = (a.Length > b.Length) ? a : b;
-            Console.WriteLine("la parola più lunga fra le due è: " + parolaLunga);
+    if (a % 2 == 0) // se è pari
+    {
+        Console.WriteLine("Il numero " + a + "è pari");
+    }
+    else
+    {
+        Console.WriteLine("Il numero " + a + " è dispari");
+    }
 }
+   
+
 
 
 
