@@ -91,6 +91,38 @@
 
 // --------- es. 6 --------- //
 
+////Creo l'array di invitati
+//  string[] invitati = 
+//      { 
+//          "Roborto", 
+//          "Peppo", 
+//          "Sbrugolo", 
+//          "Alborgo", 
+//          "Amogus",
+//          "RiccardoZanottiQuelloDeiPinguiniTattici",
+//          "Valentona",
+//          "Paolo",
+//      };
 
+////Chiedo il nome alla persona
+//  Console.Write("Vediamo se sei invitato! Scrivi il tuo nome: ");
+//  string nome = Console.ReadLine();
+
+//Controllo se è contenuto nell'array e dò una risposta a seconda dei casi
+//  if (invitati.Contains(nome))
+//  {
+//      Console.WriteLine("----------------------------------------------");
+//      Console.WriteLine("|YEY Puoi entrare, sbrigati, fuori c'è freddo|");
+//      Console.WriteLine("----------------------------------------------");
+//  }
+//  else
+//  {
+//      Console.WriteLine("----------------------------------");
+//      Console.WriteLine("|Get the fuck out of here paesant|");
+//      Console.WriteLine("----------------------------------");
+//  }
+
+
+// --------- es. 7 --------- //
 
 
