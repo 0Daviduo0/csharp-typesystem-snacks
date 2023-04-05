@@ -125,25 +125,51 @@
 
 // --------- es. 7 --------- //
 
-var numeriDispariArr = Array.Empty<int>();
-int numero = 0;
+//// Creo array vuoto e variabile int
+//  var numeriDispariArr = Array.Empty<int>();
+//  int numero = 0;
 
-for (int i = 0; i < 6; i++)
+//// Ciclo for per chiedere 6 volte un numero, controllare che sia effettivamente un numero e poi controllare che sia dispari e successivamente metterlo all'interno dell'array
+//  for (int i = 0; i < 6; i++)
+//  {
+//      Console.Write("Inserisci un numero: ");
+//      while (!int.TryParse(Console.ReadLine(), out numero))
+//      {
+//          Console.WriteLine("ci hai provato! Inserisci un numero >:(");
+//      }
+//      if (numero % 2 != 0)
+//      {
+//          Array.Resize(ref numeriDispariArr, numeriDispariArr.Length + 1);
+//          numeriDispariArr[numeriDispariArr.Length - 1] = numero;
+//      }
+//  }
+//// Stampo il contenuto dell'array
+//  Console.WriteLine("I numeri contenuti nell'array sono:");
+//  for (int i = 0; i < numeriDispariArr.Length; i++)
+//  {
+//      Console.WriteLine("-" + (i+1) + "o numero dell'Array: " + numeriDispariArr[i]);
+//  }
+
+
+// --------- es. 8 --------- //
+
+int[] numeri =
+      { 
+          3, 
+          213, 
+          435, 
+          2, 
+          67568564,
+          56395,
+          345423,
+          78689,
+      };
+int somma = 0;
+
+//Il ciclo for parte da 1 e va avanti a salti di 2 in modo da prendere solo gli elementi in posizione dispari
+for (int i = 1; i<numeri.Length; i+=2)
 {
-    Console.Write("Inserisci un numero: ");
-    while (!int.TryParse(Console.ReadLine(), out numero))
-    {
-        Console.WriteLine("ci hai provato! Inserisci un numero >:(");
-    }
-    if (numero % 2 != 0)
-    {
-        Array.Resize(ref numeriDispariArr, numeriDispariArr.Length + 1);
-        numeriDispariArr[numeriDispariArr.Length - 1] = numero;
-    }
-}
-Console.WriteLine("I numeri contenuti nell'array sono:");
-for (int i = 0; i < numeriDispariArr.Length; i++)
-{
-    Console.WriteLine("-" + (i+1) + "o numero dell'Array: " + numeriDispariArr[i]);
+    somma += numeri[i];
 }
 
+Console.WriteLine("Somma degli elementi in posizione dispari: " + somma);
