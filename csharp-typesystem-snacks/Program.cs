@@ -26,6 +26,7 @@
 
 
 // --------- es. 2 --------- //
+
 ////Chiedo la prima parola
 //  Console.Write("Inserisci la prima parola: ");
 //  string parola1 = Console.ReadLine();
@@ -249,28 +250,28 @@
 
 // --------- es. 12 --------- //
 
-    // chiedo il primo numero
-    Console.Write("Inserisci un numero:");
-    // controllo che sia un numero e poi lo salvo 
-    int numero1;
-        while (!int.TryParse(Console.ReadLine(), out numero1))
-        {
-            Console.WriteLine("ci hai provato! Inserisci un numero >:(");
-        }
+//    // chiedo il primo numero
+//    Console.Write("Inserisci un numero:");
+//    // controllo che sia un numero e poi lo salvo 
+//    int numero1;
+//        while (!int.TryParse(Console.ReadLine(), out numero1))
+//        {
+//            Console.WriteLine("ci hai provato! Inserisci un numero >:(");
+//        }
 
-controlloPariDispari(numero1);
+//controlloPariDispari(numero1);
 
-static void controlloPariDispari(int a)
-{
-    if (a % 2 == 0) // se è pari
-    {
-        Console.WriteLine("Il numero " + a + "è pari");
-    }
-    else
-    {
-        Console.WriteLine("Il numero " + a + " è dispari");
-    }
-}
+//static void controlloPariDispari(int a)
+//    {
+//        if (a % 2 == 0) // se è pari
+//        {
+//            Console.WriteLine("Il numero " + a + " è pari");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Il numero " + a + " è dispari");
+//        }
+//    }
    
 
 
