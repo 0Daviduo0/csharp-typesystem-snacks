@@ -153,23 +153,52 @@
 
 // --------- es. 8 --------- //
 
-int[] numeri =
-      { 
-          3, 
-          213, 
-          435, 
-          2, 
-          67568564,
-          56395,
-          345423,
-          78689,
-      };
-int somma = 0;
+//  int[] numeri =
+//        { 
+//            3,        //0 
+//            213,      //1 
+//            435,      //2
+//            2,        //3
+//            67568564, //4
+//            56395,    //5
+//            345423,   //6
+//            78689,    //7
+//        };
+//  int somma = 0;
 
-//Il ciclo for parte da 1 e va avanti a salti di 2 in modo da prendere solo gli elementi in posizione dispari
-for (int i = 1; i<numeri.Length; i+=2)
-{
-    somma += numeri[i];
-}
+////Il ciclo for parte da 1 e va avanti a salti di 2 in modo da prendere solo gli elementi in posizione dispari
+//  for (int i = 1; i<numeri.Length; i+=2)
+//  {
+//      somma += numeri[i];
+//  }
 
-Console.WriteLine("Somma degli elementi in posizione dispari: " + somma);
+//  Console.WriteLine("Somma degli elementi in posizione dispari: " + somma);
+
+
+// --------- es. 9 --------- //
+
+  var numeriArr = Array.Empty<int>();
+    int numero;
+    int somma = 0;
+
+    while (somma < 50)
+    {
+        
+        Console.Write("Inserisci un numero: ");
+        while (!int.TryParse(Console.ReadLine(), out numero))
+        {
+            Console.WriteLine("ci hai provato! Inserisci un numero >:(");
+        }
+        somma += numero;
+        Console.WriteLine("somma: " + somma);
+        Array.Resize(ref numeriArr, numeriArr.Length + 1);
+        numeriArr[numeriArr.Length - 1] = numero;
+
+        foreach (int x in numeriArr)
+        {
+            Console.WriteLine("numero dell'Array: " + x);
+        }
+    }
+
+
+
