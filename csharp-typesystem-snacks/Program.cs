@@ -125,4 +125,25 @@
 
 // --------- es. 7 --------- //
 
+var numeriDispariArr = Array.Empty<int>();
+int numero = 0;
+
+for (int i = 0; i < 6; i++)
+{
+    Console.Write("Inserisci un numero: ");
+    while (!int.TryParse(Console.ReadLine(), out numero))
+    {
+        Console.WriteLine("ci hai provato! Inserisci un numero >:(");
+    }
+    if (numero % 2 != 0)
+    {
+        Array.Resize(ref numeriDispariArr, numeriDispariArr.Length + 1);
+        numeriDispariArr[numeriDispariArr.Length - 1] = numero;
+    }
+}
+Console.WriteLine("I numeri contenuti nell'array sono:");
+for (int i = 0; i < numeriDispariArr.Length; i++)
+{
+    Console.WriteLine("-" + (i+1) + "o numero dell'Array: " + numeriDispariArr[i]);
+}
 
